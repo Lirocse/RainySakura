@@ -1,0 +1,7 @@
+# 本 bundle 的层：每轮在请求末尾追加一条「记忆摘要」。
+# 只注入，不生成、不压缩 —— 摘要由 Agent 自己写。
+- insert:
+    - id: dsh-memory-inject
+      name: 'dsh-menmo-inject'
+      config:
+        memoryDir: 'C:/path/to/your/memory'   # ← 改成你的记忆目录（mem.js 所在处）

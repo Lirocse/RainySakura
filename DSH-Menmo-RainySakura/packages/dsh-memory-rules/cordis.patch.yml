@@ -1,0 +1,8 @@
+# 本 bundle 的层：把额外规则库声明插进启动树。
+# 只铺模板文件，不覆盖已存在的内容。
+- insert:
+    - id: dsh-memory-rules
+      name: 'dsh-menmo-rules'
+      config:
+        memoryDir: 'C:/path/to/your/memory'   # ← 改成你的记忆目录
+        agentId: 'Agent'                      # ← 改成你的 Agent 名字

@@ -1,0 +1,32 @@
+{
+  "name": "dsh-menmo-inject",
+  "version": "1.2.0",
+  "description": "摘要注入器：每轮请求组装好之后，往末尾追加一条「记忆摘要」消息（只注入，不生成、不压缩）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lirocse/RainySakura.git"
+  }
+}

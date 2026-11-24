@@ -1,0 +1,6 @@
+# 本 bundle 的层：把记忆工具插进启动树。
+- insert:
+    - id: tool-memory
+      name: 'dsh-menmo-memory'
+      config:
+        memoryDir: 'C:/path/to/your/memory'   # ← 改成你的记忆目录（mem.js 所在处）
